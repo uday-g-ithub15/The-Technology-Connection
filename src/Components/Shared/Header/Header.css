@@ -3,13 +3,24 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    background-color: aliceblue;
+    color: dodgerblue;
+    box-sizing: border-box;
 }
 nav .nav-items{
     display: flex;
+    position: relative;
 }
 nav a{
     text-decoration: none;
     display: block;
+    color: dodgerblue;
     padding: 5px 10px;
     margin: 0 5px;
+}
+nav a:hover{
+   text-decoration: underline;
 }
