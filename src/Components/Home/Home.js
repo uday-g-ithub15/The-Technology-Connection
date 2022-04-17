@@ -1,12 +1,13 @@
 import React from 'react';
+import About from '../About/About';
 import './Home.css'
-import banner from '../../Images/Banner/banner.jpg'
+import Services from './Services/Services';
 const Home = () => {
     
     return (
         <div className='home-container'>
-           {/* <img src={banner} alt="" /> */}
-           <h1>Name</h1>
+           <About/>
+           <Services/>
         </div>
     );
 };

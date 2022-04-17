@@ -1,7 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import './Header.css';
 
@@ -23,7 +23,7 @@ const Header = () => {
             </div>
             <div className="nav-items">
                 <NavLink   style={activeLinkStyle} to={'/'}>Home</NavLink> 
-                <NavLink   style={activeLinkStyle} to={'/Services'}>Services</NavLink> 
+                <NavLink  style={activeLinkStyle} to={'/home/#services'} >Services</NavLink> 
                 <NavLink   style={activeLinkStyle} to={'/about'}>About</NavLink> 
                 {
                     user 
