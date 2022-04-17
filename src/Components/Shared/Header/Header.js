@@ -1,8 +1,15 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { NavLink } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import './Header.css';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+    const logout = () =>{
+        signOut(auth)
+    }
     const activeLinkStyle = ({isActive}) => {
         return {
             backgroundColor: isActive ? 'tomato' : '',
@@ -18,8 +25,16 @@ const Header = () => {
                 <NavLink   style={activeLinkStyle} to={'/'}>Home</NavLink> 
                 <NavLink   style={activeLinkStyle} to={'/Services'}>Services</NavLink> 
                 <NavLink   style={activeLinkStyle} to={'/about'}>About</NavLink> 
-                <NavLink   style={activeLinkStyle} to={'/login'}>Login</NavLink> 
-                <NavLink   style={activeLinkStyle} to={'/register'}>Register </NavLink> 
+                {
+                    user 
+                    ?
+                        <button onClick={logout} >Sign Out</button>
+                     :
+                     <>
+                     <NavLink   style={activeLinkStyle} to={'/login'}>Login</NavLink> 
+                <NavLink   style={activeLinkStyle} to={'/register'}>Register </NavLink>
+                </>
+                } 
             </div>
         </nav>
     );
