@@ -1,0 +1,26 @@
+.social-login-container{
+    margin-top: 10px;
+    display: flex;
+}
+.social-login-container button{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    padding:0 5px;
+    width: 100px;
+    border: 1px solid brown;
+    transition: all 0.3s;
+}
+.social-login-container .icon{
+    font-size: 15px;
+    /* margin-right: 6px; */
+}
+.social-login-container .facebook{
+    color: #3b5998;
+}
+.social-login-container .github{
+    color: #171515;
+}
+.social-login-container button:hover{
+    box-shadow:0px 0px 10px rgb(124, 124, 139) ;
+}
