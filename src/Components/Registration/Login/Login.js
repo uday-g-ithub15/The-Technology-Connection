@@ -5,7 +5,7 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 const Login = () => {
     return (
         <div className='register-container'>
-        <h2 style={{color:'dodgerblue'}}>Please Register</h2>
+        <h2 style={{color:'dodgerblue'}}>Please Login</h2>
             <form className='register-form-container'>
                 <input type="email" name="" id=""  placeholder='Enter your email'/>
                 <input type="password" name="" id=""  placeholder='Enter your password'/>
