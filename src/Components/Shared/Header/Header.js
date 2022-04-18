@@ -25,7 +25,7 @@ const Header = () => {
             <div className="nav-items">
                 <NavLink   style={activeLinkStyle} to={'/'}>Home</NavLink> 
                 <NavLink  style={activeLinkStyle} to='/services' >Services</NavLink> 
-                <NavLink   style={activeLinkStyle} to={'/about'}>About</NavLink> 
+                <NavLink   style={activeLinkStyle} to={'/blogs'}>Blogs</NavLink> 
                 {
                     user 
                     ?

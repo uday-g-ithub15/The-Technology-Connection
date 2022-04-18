@@ -1,12 +1,11 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import useServices from '../../CustomHook/useServices';
 
 const Checkout = () => {
     const {courseId} = useParams();
-    const [services, setServices] = useState([]);
-    useEffect(() => {
-        fetch('data.json').then(res => res.json()).then(data => setServices(data));
-    },[])
+    const [services] = useServices();
+    console.log(services,courseId);
     return (
         <div>
             <h1>This is checkout section : {courseId} {services?.length}</h1>
