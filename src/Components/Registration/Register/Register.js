@@ -1,13 +1,15 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useAuthState,  useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import {  NavLink, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Register.css'
+import '../../SharedClass/Btn.css'
 
 const Register = () => {
-    const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
     const [updateProfile] = useUpdateProfile(auth);
+    const [error, setError] = useState('')
     const[user]= useAuthState(auth);
     const navigate = useNavigate();
     const refName = useRef(null);
@@ -21,9 +23,10 @@ const Register = () => {
         const pass = refPass.current.value;
         const confirmPass = refConfirmPass.current.value;
         if(pass !==confirmPass){
-            alert("Password doesn't matched");
+            setError("Password doesn't matched");
             return;
         }
+        setError('')
         await createUserWithEmailAndPassword(email,pass);
         await updateProfile({displayName:name});
         }
@@ -36,11 +39,12 @@ const Register = () => {
         <div className='register-container'>
             <h2 style={{color:'dodgerblue'}}>Please Register</h2>
                 <form onSubmit={formSubmit} className='register-form-container'>
-                    <input ref={refName} type="text" name="" id=""  placeholder='Enter your name'/>
-                    <input ref={refEmail} type="email" name="" id=""  placeholder='Enter your email'/>
-                    <input ref={refPass} type="password" name="" id=""  placeholder='Enter your password'/>
-                    <input ref={refConfirmPass} type="password" name="" id="" placeholder='Enter your confirm password' />
-                    <button >Register</button>
+                    <input ref={refName} type="text" name="" id=""  placeholder='Enter your name' required/>
+                    <input ref={refEmail} type="email" name="" id=""  placeholder='Enter your email' required/>
+                    <input ref={refPass} type="password" name="" id=""  placeholder='Enter your password' required/>
+                    <input ref={refConfirmPass} type="password" name="" id="" placeholder='Enter your confirm password' required />
+                    {error}
+                    <button className='btn'>Register</button>
                 </form>
                 <p>Already have account ? <NavLink  to={'/login'}>Please Login</NavLink></p>
                 <div className="hr-line-container">

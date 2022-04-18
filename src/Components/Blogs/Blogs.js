@@ -18,9 +18,14 @@ const About = () => {
                 </p>
                 <p>The other options i've to implement are : </p>
                 <ol>
-                    <li>Cards</li>
-                    <li>Retina Scans</li>
-                    <li>Finger prints</li>
+                <li>Parse</li>
+                    <li>Back4App</li>
+                    <li>AWS Amplify</li>
+                    <li>AWS </li>
+                    <li>NativeScript</li>
+                    <li>Couchbase</li>
+                    <li>Kuzzle</li>
+                    <li>RxDB</li>
                 </ol>
             </article>
             <article>

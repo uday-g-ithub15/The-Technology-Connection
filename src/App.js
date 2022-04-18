@@ -14,7 +14,7 @@ import PrivateRoute from './Components/Shared/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
@@ -24,7 +24,7 @@ function App() {
         <Route path='/about' element={<About/>}></Route>;
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/register' element={<Register/>}></Route>
-        <Route path='/service/:courseId' element={
+        <Route path='/services/:courseId' element={
           <PrivateRoute>
             <Checkout/>
           </PrivateRoute>
@@ -33,7 +33,7 @@ function App() {
         <Route path='*' element={<Error/>}></Route>
       </Routes>
       <Footer/>
-    </>
+    </div>
   );
 }
 

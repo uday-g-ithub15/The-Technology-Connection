@@ -38,11 +38,8 @@ nav a:hover{
         width: auto;
         padding: 10px;
         position: absolute;
-        /* left: -400px; */
         transition: all 0.5s;
-        z-index: -1
-        ;
-        /* width: 60%; */
+        z-index: -1 ;
     }
     .nav-items{
         flex-direction: column;
@@ -55,7 +52,7 @@ nav a:hover{
     }
     header .responsive-icon{
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
     }
 }

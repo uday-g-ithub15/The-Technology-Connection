@@ -17,7 +17,7 @@ const Service = ({service}) => {
                 <p>{description}</p>
             </div>
                 {/* <button style={{display:'block'}} className='btn'>BOOK NOW</button> */}
-                <button style={{display:'block'}} className='btn' onClick={() =>navigate('/service/'+_id) }>BOOK NOW</button>
+                <button style={{display:'block'}} className='btn' onClick={() =>navigate('/services/'+_id) }>BOOK NOW</button>
         </div>
     );
 };
