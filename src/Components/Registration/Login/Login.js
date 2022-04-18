@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useAuthState, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import '../Register/Register.css'
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -11,15 +11,18 @@ const Login = () => {
     const navigate = useNavigate();
     const refEmail = useRef(null);
     const refPass = useRef(null);
-    const formSubmit = async (e) => {
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
+
+
+    const formSubmit =  (e) => {
         e.preventDefault();
         const email = refEmail.current.value;
         const pass = refPass.current.value;
         signInWithEmailAndPassword(email, pass);
         }
     if(user){
-        console.log(user);
-        navigate('/')
+        navigate(from, {replace:true});
     }
     return (
         <div className='register-container'>
