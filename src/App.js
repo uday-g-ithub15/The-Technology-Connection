@@ -6,6 +6,7 @@ import Services from './Components/Home/Services/Services';
 import Login from './Components/Registration/Login/Login';
 import Register from './Components/Registration/Register/Register';
 import Error from './Components/Shared/Error/Error';
+import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/register' element={<Register/>}></Route>
         <Route path='*' element={<Error/>}></Route>
       </Routes>
+      <Footer/>
     </>
   );
 }
