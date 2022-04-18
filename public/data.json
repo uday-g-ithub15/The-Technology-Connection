@@ -1,37 +1,37 @@
 [
     {
       "_id": "625b13e6ec39b6d6e8184a6a",
-      "picture": "https://img.freepik.com/free-photo/man-woman-celebrating-their-wedding-beach_23-2149003475.jpg?t=st=1650132262~exp=1650132862~hmac=43dc5f40ac5532ea8427e931a9944c16b97aba567478ca951bc11e74205ad6eb&w=996",
-      "price": "$899",
-      "name": "Wedding Photography",
-      "description": "Wedding photographers capture memories for brides and grooms, creating a photographic narrative of wedding ceremonies.They take action shots of pre-ceremony preparations, the marriage ceremony, and the reception.For this you need a best photographer.We'll provide best photographer for your wedding. "
+      "picture": "https://cdn.pixabay.com/photo/2021/11/04/06/27/artificial-intelligence-6767502_1280.jpg",
+      "price": "$99",
+      "name": "Artificial Intelligence",
+      "description": "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions."
     },
     {
       "_id": "625b13e6e5cca1739e19d8d8",
-      "picture": "https://img.freepik.com/free-photo/man-holds-lot-gifts-near-christmas-tree_1304-5653.jpg?t=st=1650135306~exp=1650135906~hmac=396d64300395c7214cb6bc2fe685c37a49d8ee28f5307e386d200a59d2c5f936&w=996",
-      "price": "$599",
-      "name": "Birthday Celebrating",
-      "description": "Birth photography is about documenting the arrival of your any special person, whether this is at home, in hospital or a birthing center, vaginally or belly birthing and our birth photographer have 5 years plus experiance.So you can hire a best photographer from us."
+      "picture": "https://cdn.pixabay.com/photo/2020/06/10/09/31/mockup-5281992_1280.jpg",
+      "price": "$59",
+      "name": "VUE.JS",
+      "description": "Vue.js is an open-source model, view,  viewmodel front end JavaScript framework for building user interfaces and single-page applications."
     },
     {
       "_id": "625b13e6204981e1eb2b0fb7",
-      "picture": "https://img.freepik.com/free-photo/top-view-photography-accesories-with-copy-space_23-2148363427.jpg?t=st=1650132673~exp=1650133273~hmac=964529d794ae48661a6bfb85cf653f3171195de5a18efea34f5ac3fc1cbd94aa&w=996",
-      "price": "$299",
-      "name": "Learn Photography",
-      "description": "Want to learn photography ? But don't get any courses yet ? We've a great course in phorography. You can enroll if you want to learn photography"
+      "picture": "https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg",
+      "price": "$89",
+      "name": "PHP",
+      "description": "PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP."
     },
     {
       "_id": "625b13e65c9035a082e7df50",
-      "picture": "https://img.freepik.com/free-photo/close-up-view-male-hand-holding-professional-camera-street_8353-6510.jpg?t=st=1650132673~exp=1650133273~hmac=576425b452796f77fac33f3f939687c6f0455f19cd4ef9c3d19076f10a771133&w=996",
-      "price": "$139",
-      "name": "Personal Photoshoot",
-      "description": "Need personal photographer ? You can hire international photographer from us."
+      "picture": "https://cdn.pixabay.com/photo/2014/02/13/07/28/security-265130_1280.jpg",
+      "price": "$109",
+      "name": "Ethical Hacking",
+      "description": "Ethical hacking involves an authorized attempt to gain unauthorized access to a computer system, application, or data."
     },
     {
       "_id": "625b13e63d5d5270c410c978",
-      "picture": "https://img.freepik.com/free-photo/group-students-celebrating-graduation-together-wearing-face-masks_1303-27687.jpg?t=st=1650136932~exp=1650137532~hmac=7031ac01f3349b29352ac6f708b833c5386d7131bf3c6153a9bfd87ca4aca673&w=996",
-      "price": "$248",
-      "name": "Shoot lastday of college",
-      "description": "Want to hire photographer for capture memories of last day of college ? You can hire our professional photographer"
+      "picture": "https://cdn.pixabay.com/photo/2019/06/17/19/48/source-4280758_1280.jpg",
+      "price": "$79",
+      "name": "Python Programming",
+      "description": "Python is a powerful general-purpose programming language. It is used in web development, data science, creating software prototypes, and so on."
     }
   ]

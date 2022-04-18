@@ -1,5 +1,4 @@
 nav{
-    border:solid;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,6 +8,9 @@ nav{
     background-color: aliceblue;
     color: dodgerblue;
     box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 nav .nav-items{
     display: flex;

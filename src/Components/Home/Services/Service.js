@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css'
+import '../../SharedClass/Btn.css'
 
 const Service = ({service}) => {
     const {picture, price, name, description} = service ;
@@ -13,7 +14,7 @@ const Service = ({service}) => {
                 <h4>Price : {price}</h4>
                 <p>{description}</p>
             </div>
-                <button style={{display:'block'}}>BOOK NOW</button>
+                <button style={{display:'block'}} className='btn'>BOOK NOW</button>
         </div>
     );
 };

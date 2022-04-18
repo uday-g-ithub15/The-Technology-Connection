@@ -11,8 +11,9 @@ const Header = () => {
         signOut(auth)
     }
     const activeLinkStyle = ({isActive}) => {
+        
         return {
-            backgroundColor: isActive ? 'tomato' : '',
+            backgroundColor: isActive ? 'rgba(88,65,169,0.77)' : '',
             color:isActive ? 'white' : ''
         }
     }
@@ -23,12 +24,12 @@ const Header = () => {
             </div>
             <div className="nav-items">
                 <NavLink   style={activeLinkStyle} to={'/'}>Home</NavLink> 
-                <NavLink  style={activeLinkStyle} to={'/home/#services'} >Services</NavLink> 
+                <NavLink  style={activeLinkStyle} to='/home#services' >Services</NavLink> 
                 <NavLink   style={activeLinkStyle} to={'/about'}>About</NavLink> 
                 {
                     user 
                     ?
-                        <button onClick={logout} >Sign Out</button>
+                        <button onClick={logout} className='btn'>Sign Out</button>
                      :
                      <>
                      <NavLink   style={activeLinkStyle} to={'/login'}>Login</NavLink> 

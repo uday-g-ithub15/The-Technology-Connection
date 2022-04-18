@@ -1,0 +1,11 @@
+.banner{
+    background: url('../../../Images/Banner/banner.jpg') center center/cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:12px ;
+}

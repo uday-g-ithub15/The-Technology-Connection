@@ -13,17 +13,6 @@
     border-radius: 12px;
 
 }
-.service-container button{
-    padding: 10px;
-    background-color: tomato;
-    color: white;
-    border: none;
-    font-weight: 600;
-}
-.service-container button:hover{
-    cursor: pointer;
-    background-color: rgb(249, 60, 26);
-}
 .service-container img{
     width: 100%;
 }
