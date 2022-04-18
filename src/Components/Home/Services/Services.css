@@ -3,6 +3,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px ;
     background-color: aliceblue;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
 }
 .service-container{
     display: flex;
@@ -15,4 +18,9 @@
 }
 .service-container img{
     width: 100%;
+}
+@media screen and (max-width:688px) {
+    .services-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

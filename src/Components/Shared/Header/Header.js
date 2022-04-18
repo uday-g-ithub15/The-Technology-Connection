@@ -1,11 +1,14 @@
 import { signOut } from 'firebase/auth';
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import {  NavLink } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import {AiOutlineMenu} from 'react-icons/ai'
+import {ImCross} from 'react-icons/im'
 import './Header.css';
 
 const Header = () => {
+    const [icon, setIcon] = useState(false);
     const [user] = useAuthState(auth);
     const logout = () =>{
         signOut(auth)
@@ -18,7 +21,15 @@ const Header = () => {
         }
     }
     return (
-        <nav>
+        <header>
+        <div className='responsive-icon'>
+                 <button onClick={() => setIcon(!icon)}>
+                 {
+                 icon ? <AiOutlineMenu/> : <ImCross/>
+               }
+               </button>
+        </div>
+        <nav className={icon ?'nav-close' : 'nav-open'}>
             <div className="connection">
                 <h3>The <span>Technology</span> Connection</h3>
             </div>
@@ -38,7 +49,8 @@ const Header = () => {
                 </>
                 } 
             </div>
-        </nav>
+            </nav>
+            </header>
     );
 };
 

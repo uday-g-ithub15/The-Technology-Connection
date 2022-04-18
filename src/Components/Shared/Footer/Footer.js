@@ -4,7 +4,8 @@ import './Footer.css'
 const Footer = () => {
     return (
         <footer className='footer-container'>
-            <h1>Hello world</h1>
+    <h4>Copyright 2022</h4>
+    <p>All right reserved by Uday Hasan</p>
         </footer>
     );
 };

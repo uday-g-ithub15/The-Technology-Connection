@@ -1,20 +1,24 @@
-nav{
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 80%;
     margin: auto;
-    position: relative;
     background-color: aliceblue;
     color: dodgerblue;
     box-sizing: border-box;
-    position: sticky;
-    top: 0;
-    z-index: 1;
 }
 nav .nav-items{
     display: flex;
     position: relative;
+}
+header .responsive-icon{
+    display: none;
 }
 nav a{
     text-decoration: none;
@@ -25,4 +29,33 @@ nav a{
 }
 nav a:hover{
    text-decoration: underline;
+}
+
+@media screen and (max-width:688px) {
+   header nav{
+        flex-direction: column;
+        margin: 0;
+        width: auto;
+        padding: 10px;
+        position: absolute;
+        /* left: -400px; */
+        transition: all 0.5s;
+        z-index: -1
+        ;
+        /* width: 60%; */
+    }
+    .nav-items{
+        flex-direction: column;
+    }
+    .nav-open{
+        left: 0px;
+    }
+    .nav-close{
+        left: -400px;
+    }
+    header .responsive-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+    }
 }
