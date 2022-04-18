@@ -19,13 +19,14 @@ const Header = () => {
     }
     return (
         <nav>
-            <div className="photography-brand">
+            <div className="connection">
                 <h3>The <span>Technology</span> Connection</h3>
             </div>
             <div className="nav-items">
                 <NavLink   style={activeLinkStyle} to={'/'}>Home</NavLink> 
                 <NavLink  style={activeLinkStyle} to='/services' >Services</NavLink> 
                 <NavLink   style={activeLinkStyle} to={'/blogs'}>Blogs</NavLink> 
+                <NavLink   style={activeLinkStyle} to={'/about'}>About</NavLink> 
                 {
                     user 
                     ?
