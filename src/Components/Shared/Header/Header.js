@@ -25,11 +25,11 @@ const Header = () => {
         <div className='responsive-icon'>
                  <button onClick={() => setIcon(!icon)}>
                  {
-                 icon ? <AiOutlineMenu/> : <ImCross/>
+                 icon ? <ImCross />:<AiOutlineMenu/>
                }
                </button>
         </div>
-        <nav className={icon ?'nav-close' : 'nav-open'}>
+        <nav className={icon ?'nav-open' : 'nav-close'}>
             <div className="connection">
                 <h3>The <span>Technology</span> Connection</h3>
             </div>
