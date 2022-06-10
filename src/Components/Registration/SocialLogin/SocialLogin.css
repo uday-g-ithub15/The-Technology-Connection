@@ -8,12 +8,14 @@
     margin-right: 10px;
     padding:0 5px;
     width: 100px;
+    background-color: tomato;
+    color: white;
+    font-weight: 700;
     border: 1px solid brown;
     transition: all 0.3s;
 }
 .social-login-container .icon{
     font-size: 15px;
-    /* margin-right: 6px; */
 }
 .social-login-container .facebook{
     color: #3b5998;
